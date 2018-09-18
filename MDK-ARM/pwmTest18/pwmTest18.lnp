@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"pwmtest18\startup_stm32f103xe.o"
+"pwmtest18\gpio.o"
+"pwmtest18\stm32f1xx_it.o"
+"pwmtest18\stm32f1xx_hal_msp.o"
+"pwmtest18\tim.o"
+"pwmtest18\main.o"
+"pwmtest18\system_stm32f1xx.o"
+"pwmtest18\stm32f1xx_hal_flash_ex.o"
+"pwmtest18\stm32f1xx_hal_gpio.o"
+"pwmtest18\stm32f1xx_hal_gpio_ex.o"
+"pwmtest18\stm32f1xx_hal_pwr.o"
+"pwmtest18\stm32f1xx_hal.o"
+"pwmtest18\stm32f1xx_hal_flash.o"
+"pwmtest18\stm32f1xx_hal_tim_ex.o"
+"pwmtest18\stm32f1xx_hal_dma.o"
+"pwmtest18\stm32f1xx_hal_rcc.o"
+"pwmtest18\stm32f1xx_hal_tim.o"
+"pwmtest18\stm32f1xx_hal_cortex.o"
+"pwmtest18\stm32f1xx_hal_rcc_ex.o"
+--library_type=microlib --strict --scatter "pwmTest18\pwmTest18.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pwmTest18.map" -o pwmTest18\pwmTest18.axf
